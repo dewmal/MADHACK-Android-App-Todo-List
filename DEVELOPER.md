@@ -104,7 +104,7 @@ Step 3 - Manifest File
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(MyActivity.this, "Hello World", Toast.LENGTH_SHORT).show();
+                        Log.i("MyActivity", "Hello World");
                     }
                 }
         );
