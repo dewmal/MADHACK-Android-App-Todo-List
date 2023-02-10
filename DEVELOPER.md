@@ -78,4 +78,37 @@ Step 3 - Manifest File
 </manifest>
 ```
 
+### Create Simple Android App using button and Toast
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
+```
+
+
+```java
+
+
+        findViewById(R.id.button).setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MyActivity.this, "Hello World", Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+
+```
+
+
 
