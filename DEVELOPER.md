@@ -270,7 +270,8 @@ public class MyActivity extends Activity {
 
 ### Access thirdparty library
 
-https://google.github.io/volley/
+- https://google.github.io/volley/
+- https://square.github.io/okhttp/
 
 
 ### How anroid background threads work
