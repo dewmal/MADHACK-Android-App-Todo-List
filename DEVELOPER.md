@@ -1,3 +1,4 @@
+
 # UI Design
 ![image](https://user-images.githubusercontent.com/499015/218116763-2c9f1436-9950-44f7-b4fb-1d89e793d4ab.png)
 
@@ -110,5 +111,33 @@ Step 3 - Manifest File
 
 ```
 
+# Android Studio
 
+## Studio Features
+
+### Logcat
+![image](https://user-images.githubusercontent.com/499015/218123400-4ef295cf-bb91-4437-9b67-d8f4c6492430.png)
+
+
+### Device Manager 
+![image](https://user-images.githubusercontent.com/499015/218123522-94a73878-d52a-4dbd-a50a-619429181d53.png)
+
+
+
+## Emulator And its features
+
+![image](https://user-images.githubusercontent.com/499015/218123239-9aa25fb7-108a-4d08-b472-269158ea9d6c.png)
+
+
+
+## Project Structure
+
+![image](https://user-images.githubusercontent.com/499015/218123729-de04b6b1-be3a-464b-b2c8-90d10d35a6b8.png)
+
+
+## Resource Manager
+![image](https://user-images.githubusercontent.com/499015/218123853-abc046e6-f76a-4962-9f84-1063ae9a2421.png)
+
+## Build Varient
+![image](https://user-images.githubusercontent.com/499015/218124121-84619df4-1517-48fd-8713-54f3d0760e12.png)
 
