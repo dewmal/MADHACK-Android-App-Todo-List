@@ -520,6 +520,11 @@ https://www.figma.com/file/DMYi45Gf77sgoTpshwbVjN/Todo-Mobile-App-(Community)-(C
 
 ```
 
+Edit Text UI Design
+
+![image](https://user-images.githubusercontent.com/499015/218170297-be230e41-8647-439a-bcc5-99722b1e5834.png)
+
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
