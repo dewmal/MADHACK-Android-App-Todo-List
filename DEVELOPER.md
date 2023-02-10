@@ -15,5 +15,67 @@ https://www.figma.com/file/DMYi45Gf77sgoTpshwbVjN/Todo-Mobile-App-(Community)-(C
 Here we override oncreate method
 
 
+Step 1
+```java
+package com.syigen.dewmal.madhack.android.todoapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class MyActivity extends Activity {
+
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.my_layout);
+    }
+
+}
+
+```
+
+Step 2 Layout file
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</LinearLayout>
+```
+
+Step 3 - Manifest File
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyTodoApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".MyActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>
+```
 
 
