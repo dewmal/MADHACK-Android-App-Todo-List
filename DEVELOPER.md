@@ -418,7 +418,6 @@ public class MyActivity extends Activity {
                         try {
                             Response response = client.newCall(request).execute();
                             Log.i("Response", response.body().string());
-                            tvTranslatedText.setText(text);
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -426,7 +425,7 @@ public class MyActivity extends Activity {
             ).start();
 
 
-//            tvTranslatedText.setText(text);
+           tvTranslatedText.setText(text);
         });
 
 
