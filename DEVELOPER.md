@@ -454,3 +454,10 @@ public class MyActivity extends Activity {
                         }
 ```
 
+new Handler()
+
+*** We cant touch background thread to main thread directly so handler is going to collect all events which are available in main thread in a queue and posses this queue to looper class. ***
+
+```java
+ new Handler().post(() -> tvTranslatedText.setText(translatedText));
+ ```
