@@ -76,6 +76,20 @@ Step 3 - Manifest File
 
 ### Create Simple Android App using button and Toast
 
+
+#### Drawable Resources
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="1dp"
+    android:shape="oval">
+    <solid android:color="#fff" />
+</shape>
+
+
+```
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
