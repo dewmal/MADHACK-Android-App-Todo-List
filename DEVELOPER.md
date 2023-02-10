@@ -267,3 +267,8 @@ public class MyActivity extends Activity {
    <uses-permission
         android:name="android.permission.INTERNET" />
 ```
+
+### How anroid background threads work
+
+![image](https://user-images.githubusercontent.com/499015/218150991-68dd3c47-c0ca-4045-96f7-89af21bd44cb.png)
+
