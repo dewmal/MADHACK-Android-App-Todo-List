@@ -274,6 +274,11 @@ public class MyActivity extends Activity {
 - https://square.github.io/okhttp/
 
 
+```groovy
+implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+```
+
 ### Send Request to API
 
 ```java
