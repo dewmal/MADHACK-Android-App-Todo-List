@@ -274,6 +274,81 @@ public class MyActivity extends Activity {
 - https://square.github.io/okhttp/
 
 
+### Send Request to API
+
+```java
+package com.syigen.dewmal.madhack.android.todoapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import java.io.IOException;
+
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+public class MyActivity extends Activity {
+
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.my_layout);
+
+
+        EditText etText = findViewById(R.id.my_layout_et_text);
+        Button btnTranslate = findViewById(R.id.my_layout_btn_translate);
+        TextView tvTranslatedText = findViewById(R.id.my_layout_tv_text);
+
+
+        btnTranslate.setOnClickListener(v -> {
+            String text = etText.getText().toString();
+
+
+            OkHttpClient client = new OkHttpClient();
+
+            RequestBody body = new FormBody.Builder()
+                    .add("source", "en")
+                    .add("target", "zh-CN")
+                    .add("q", text)
+                    .build();
+
+            Request request = new Request.Builder()
+                    .url("https://google-translate1.p.rapidapi.com/language/translate/v2")
+                    .post(body)
+                    .addHeader("content-type", "application/x-www-form-urlencoded")
+                    .addHeader("Accept-Encoding", "application/gzip")
+                    .addHeader("X-RapidAPI-Key", "UfkFmhNi14mshygPj2wkF6Ti7HN7p19GicSjsneiMcn90aoewZ")
+                    .addHeader("X-RapidAPI-Host", "google-translate1.p.rapidapi.com")
+                    .build();
+
+            try {
+                Response response = client.newCall(request).execute();
+                Log.i("Response", response.body().string());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+
+            tvTranslatedText.setText(text);
+        });
+
+
+    }
+}
+
+```
+
+
 ### How anroid background threads work
 
 https://developer.android.com/guide/background/asynchronous/java-threads
