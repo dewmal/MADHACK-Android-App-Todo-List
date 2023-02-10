@@ -262,5 +262,8 @@ public class MyActivity extends Activity {
 </LinearLayout>
 ```
 
-
-
+#### Add permisson to mainefets file
+```xml
+   <uses-permission
+        android:name="android.permission.INTERNET" />
+```
