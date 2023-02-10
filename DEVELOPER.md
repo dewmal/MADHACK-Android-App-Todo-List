@@ -124,20 +124,20 @@ Step 3 - Manifest File
 
 
 
-## Emulator And its features
-
-![image](https://user-images.githubusercontent.com/499015/218123239-9aa25fb7-108a-4d08-b472-269158ea9d6c.png)
-
-
-
-## Project Structure
+### Project Structure
 
 ![image](https://user-images.githubusercontent.com/499015/218123729-de04b6b1-be3a-464b-b2c8-90d10d35a6b8.png)
 
 
-## Resource Manager
+### Resource Manager
 ![image](https://user-images.githubusercontent.com/499015/218123853-abc046e6-f76a-4962-9f84-1063ae9a2421.png)
 
-## Build Varient
+### Build Varient
 ![image](https://user-images.githubusercontent.com/499015/218124121-84619df4-1517-48fd-8713-54f3d0760e12.png)
+
+
+
+## Emulator And its features
+
+![image](https://user-images.githubusercontent.com/499015/218123239-9aa25fb7-108a-4d08-b472-269158ea9d6c.png)
 
