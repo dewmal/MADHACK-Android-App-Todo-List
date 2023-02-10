@@ -186,5 +186,81 @@ final TextView textView = findViewById(R.id.my_layout_text_view);
 </LinearLayout>
 ```
 
+### Example 3 - How to connect with external API
+
+![image](https://user-images.githubusercontent.com/499015/218143117-66045f0a-bc7d-44aa-96f3-533f5bfe30f3.png)
+
+
+
+![image](https://user-images.githubusercontent.com/499015/218143902-9f30f55b-1909-4f9b-8be4-aeb2e4be422f.png)
+
+
+#### Code Examples
+
+```java
+package com.syigen.dewmal.madhack.android.todoapp;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MyActivity extends Activity {
+
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.my_layout);
+
+
+        EditText etText = findViewById(R.id.my_layout_et_text);
+        Button btnTranslate = findViewById(R.id.my_layout_btn_translate);
+        TextView tvTranslatedText = findViewById(R.id.my_layout_tv_text);
+
+
+        btnTranslate.setOnClickListener(v -> {
+            String text = etText.getText().toString();
+            tvTranslatedText.setText(text);
+        });
+
+
+    }
+}
+
+```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/my_layout_et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/my_layout_btn_translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/my_layout_tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
+```
+
 
 
