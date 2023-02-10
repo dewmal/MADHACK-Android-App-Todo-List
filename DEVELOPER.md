@@ -268,6 +268,11 @@ public class MyActivity extends Activity {
         android:name="android.permission.INTERNET" />
 ```
 
+### Access thirdparty library
+
+https://google.github.io/volley/
+
+
 ### How anroid background threads work
 
 https://developer.android.com/guide/background/asynchronous/java-threads
