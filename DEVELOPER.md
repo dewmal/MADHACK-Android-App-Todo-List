@@ -434,16 +434,17 @@ public class MyActivity extends Activity {
 ```
  Convert Response string into Json and get Transalated text
 ```java
-try {
+ try {
                             Response response = client.newCall(request).execute();
-                            Log.i("Response", response.body().string());
-
-                            JSONObject responseJson = new JSONObject(response.body().string());
+                            String responseString = response.body().string();
+                            Log.i("Response", responseString);
+                            JSONObject responseJson = new JSONObject(responseString);
                             JSONObject data = responseJson.getJSONObject("data");
                             JSONArray translations = data.getJSONArray("translations");
                             JSONObject translation = translations.getJSONObject(0);
                             String translatedText = translation.getString("translatedText");
-                            
+
+                            Log.i("translatedText", translatedText);
 
 
                         } catch (IOException e) {
