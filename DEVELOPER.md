@@ -141,3 +141,50 @@ Step 3 - Manifest File
 
 ![image](https://user-images.githubusercontent.com/499015/218123239-9aa25fb7-108a-4d08-b472-269158ea9d6c.png)
 
+
+
+
+## Second Example
+
+### Hello World Text Change on Button press
+
+```java
+final TextView textView = findViewById(R.id.my_layout_text_view);
+
+        findViewById(R.id.button).setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        textView.setText("Hello World 22");
+                        Log.i("MyActivity", "Hello World");
+                    }
+                }
+        );
+        
+```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/my_layout_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</LinearLayout>
+```
+
+
+
